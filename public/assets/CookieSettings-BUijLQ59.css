@@ -1,0 +1,216 @@
+.legal-public {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px max(16px,env(safe-area-inset-right)) 64px;
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    color: var(--text)
+}
+
+.legal-public header,.legal-public footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    align-items: center;
+    padding: 16px 0
+}
+
+.legal-brand {
+    font-weight: 800;
+    letter-spacing: .05em
+}
+
+.legal-public h1 {
+    font-size: clamp(26px,5vw,40px);
+    line-height: 1.2;
+    margin: 28px 0
+}
+
+.legal-prose {
+    line-height: 1.65;
+    overflow-wrap: anywhere;
+    white-space: normal
+}
+
+.legal-prose h2 {
+    font-size: 1.35rem;
+    line-height: 1.35;
+    margin: 28px 0 16px
+}
+
+.legal-prose h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin: 24px 0 12px
+}
+
+.legal-prose p,.legal-prose ul,.legal-prose ol {
+    margin: 12px 0
+}
+
+.legal-prose ul,.legal-prose ol {
+    padding-left: 24px
+}
+
+.legal-prose li+li {
+    margin-top: 8px
+}
+
+.legal-prose a {
+    color: var(--accent,#3974ee);
+    text-decoration: underline;
+    text-underline-offset: 3px
+}
+
+.legal-table {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    border: 1px solid var(--border,#bcc5d5);
+    border-radius: 12px
+}
+
+.legal-table table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 560px;
+    font-size: 14px
+}
+
+.legal-table th,.legal-table td {
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid var(--border,#bcc5d5)
+}
+
+.legal-public :focus-visible,.legal-prose :focus-visible {
+    outline: 3px solid var(--accent,#3974ee);
+    outline-offset: 3px
+}
+
+.legal-confirm .legal-checkbox {
+    align-items: center
+}
+
+.legal-confirm .legal-checkbox input {
+    flex: 0 0 20px;
+    margin: 0
+}
+
+.legal-confirm .legal-checkbox span {
+    line-height: 1.5
+}
+
+.analytics-notice {
+    border-top: 1px solid var(--border,#bcc5d5);
+    margin-top: 16px;
+    padding-top: 12px;
+    font-size: 14px;
+    line-height: 1.55
+}
+
+.analytics-notice summary {
+    cursor: pointer;
+    color: var(--accent,#3974ee);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    padding: 8px 0
+}
+
+.legal-prose [id],.analytics-notice[id] {
+    scroll-margin-top: 24px
+}
+
+.legal-theme {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin: 16px 0;
+    font: inherit
+}
+
+.legal-theme select {
+    min-height: 44px;
+    max-width: 65%;
+    font: inherit;
+    color: var(--text);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 8px 12px
+}
+
+.legal-public button,.legal-public header a,.legal-public footer a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center
+}
+
+.legal-public {
+    overflow-wrap: anywhere
+}
+
+html[data-theme=game] .legal-public {
+    color: #16365c;
+    background: #effaff;
+    border-radius: 18px;
+    box-shadow: 0 5px #1687b244
+}
+
+html[data-theme=game] .legal-public a {
+    color: #075997
+}
+
+.legal-checkbox {
+    gap: 6px;
+    align-items: flex-start
+}
+
+.legal-checkbox>.legal-checkbox-hit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 44px;
+    width: 44px;
+    min-height: 44px;
+    cursor: pointer
+}
+
+.legal-checkbox>.legal-checkbox-hit>input {
+    margin: 0
+}
+
+.legal-checkbox>span {
+    min-width: 0;
+    padding-top: 10px
+}
+
+.legal-checkbox-hit:has(input:focus-visible) {
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+    border-radius: 8px
+}
+
+.legal-theme select {
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    height: 44px;
+    min-height: 44px;
+    padding-right: 34px;
+    background-image: linear-gradient(45deg,transparent 50%,var(--text) 50%),linear-gradient(135deg,var(--text) 50%,transparent 50%);
+    background-position: calc(100% - 18px) 19px,calc(100% - 13px) 19px;
+    background-size: 5px 5px;
+    background-repeat: no-repeat
+}
+
+html:root .checkout-offer .legal-link {
+    display: inline;
+    min-height: 0;
+    min-width: 0;
+    vertical-align: baseline;
+    line-height: inherit
+}

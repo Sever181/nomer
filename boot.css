@@ -1,0 +1,4 @@
+/* Match the existing design before React and its styles arrive. No loader. */
+html { background:#eef0f4; color:#151a24; color-scheme:light; }
+html[data-theme="dark"] { background:#0b1018; color:#edf2f8; color-scheme:dark; }
+body { margin:0; }

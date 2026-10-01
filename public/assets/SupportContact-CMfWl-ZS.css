@@ -1,0 +1,16 @@
+.ng-nav-icon {
+    display: block;
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    overflow: visible;
+    transform-origin: 50% 70%
+}
+
+.bottom-nav.ng-nav-interactive>button {
+    transition: color .14s ease
+}
+
+.bottom-nav.ng-nav-interactive>button:active:not(:disabled) {
+    transform: none
+}
